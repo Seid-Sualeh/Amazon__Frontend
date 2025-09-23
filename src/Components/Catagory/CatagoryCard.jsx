@@ -1,5 +1,5 @@
 
-import style from "./catagory.module.css"
+import style from "./Catagory.module.css"
 import {Link} from 'react-router-dom'
 function CatagoryCard({data}) {
   return (
