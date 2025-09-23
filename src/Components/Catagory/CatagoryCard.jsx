@@ -8,7 +8,7 @@ function CatagoryCard({data}) {
               <span>
                   <h2>{data.title}</h2>
                   <img src={data.imgLink} alt="" />
-                  <p>Shoping</p>
+                  <p>Shopping</p>
               </span>
           </Link>
     </div>
