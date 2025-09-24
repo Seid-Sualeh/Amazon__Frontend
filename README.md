@@ -1,12 +1,112 @@
-# React + Vite
+🛒 Amazon Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Amazon Clone built using React.js, Node.js, and Firebase. This project replicates the core features of Amazon such as user authentication, product browsing, shopping cart, and checkout system.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Frontend: React.js (Hooks, Context API, React Router, CSS/Bootstrap for styling)
+
+Backend: Node.js & Express.js
+
+Database & Auth: Firebase
+
+Payment Integration: Stripe (optional)
+
+
+
+---
+
+✨ Features
+
+✅ User Authentication (Sign up / Login / Logout with Firebase Auth)
+✅ Browse Products (fetched dynamically)
+✅ Add / Remove products from cart
+✅ Subtotal calculation in cart
+✅ Checkout page
+✅ Responsive design (mobile & desktop friendly)
+✅ Deployment ready (Firebase / Render / Vercel)
+
+
+---
+
+📂 Project Structure
+
+amazon-clone/
+│── public/
+│── src/
+│   ├── components/    # Reusable UI components
+│   ├── pages/         # Page components (Home, Checkout, Login)
+│   ├── context/       # Context API (Data layer)
+│   ├── firebase.js    # Firebase config
+│   ├── App.js         # Main App
+│── backend/           # Node.js backend (optional for Stripe API)
+│── package.json
+│── README.md
+
+
+---
+
+⚙️ Installation & Setup
+
+1. Clone the repository
+
+git clone https://github.com/Seid-Sualeh/amazon-clone.git
+cd amazon-clone
+
+
+2. Install dependencies
+
+npm install
+
+
+3. Setup Firebase
+
+Go to Firebase Console
+
+Create a new project
+
+Enable Authentication (Email/Password)
+
+Create a Firestore database
+
+Copy config keys to src/firebase.js
+
+
+
+4. Start development server
+
+npm start
+
+
+5.Start backend server
+
+cd amazon backend
+npm install
+npm run dev
+
+
+
+
+---
+
+🖥️ Deployment
+
+Frontend: Deploy to Netlify 
+
+Backend: Deploy to Render 
+
+
+
+
+
+👨‍💻 Author
+
+Seid Sualeh Mohammed
+
+🔗 linkedin.com/in/seid-sualeh  
+
+💻 Passionate Full-Stack Developer
+
