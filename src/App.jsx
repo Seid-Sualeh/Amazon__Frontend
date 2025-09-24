@@ -10,7 +10,9 @@ import { Types } from './Utility/action.type';
 import { auth } from './Utility/firebase'; 
 function App() {
   
-  const [ dispatch] = useContext(DataContext)
+  
+  const [state, dispatch] = useContext(DataContext);
+
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
       if (authUser) {
@@ -21,11 +23,11 @@ function App() {
       } else {
         dispatch({
           type: Types.SET_USER,
-          user: null ,
+          user: null,
         });
       }
-    })
-  },[])
+    });
+  }, []);
   return (
     <>
      
