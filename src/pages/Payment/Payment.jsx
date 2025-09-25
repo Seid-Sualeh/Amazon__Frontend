@@ -129,19 +129,31 @@ const Payment = () => {
                     </span>
                   </div>
 
+                
                   <button
                     type="submit"
                     disabled={paid || processing}
-                    className={`${style.button} ${
-                      paid ? style.success : processing ? style.loadingBtn : ""
-                    }`}
+                    className={
+                      paid
+                        ? style.success
+                        : processing
+                        ? style.loadingBtn
+                        : style.button
+                    }
                   >
                     {paid ? (
                       "🎉 Payment Successful Thank You!!"
                     ) : processing ? (
                       <div className={style.loading}>
                         <ClipLoader color="gray" size={20} />
-                        <p>Processing Payment...</p>
+                        <p
+                          style={{
+                            fontWeight: "bold",
+                            fontSize: "17px",
+                          }}
+                        >
+                          Processing Payment...
+                        </p>
                       </div>
                     ) : (
                       "💳 Pay Now"
