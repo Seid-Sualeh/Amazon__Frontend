@@ -1,7 +1,7 @@
 import LowerHeader from "./LowerHeader";
 import style from "./Header.module.css";
 
-import image from "../../assets/images/Amazon-logo.jpeg";
+import image from "../../assets/images/amazon_PNG11.png";
 import { CiLocationOn } from "react-icons/ci";
 // import { FaShoppingCart } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
